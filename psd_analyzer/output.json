@@ -1,0 +1,1072 @@
+{
+  "document_size": {
+    "width": 1080,
+    "height": 452
+  },
+  "layers": [
+    {
+      "name": "UI_CMN_SubBG_Game",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 1080,
+        "height": 452
+      },
+      "depth": 0
+    },
+    {
+      "name": "frame",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 1080,
+        "height": 452
+      },
+      "depth": 0
+    },
+    {
+      "name": "nameplate",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 30,
+        "y": 27
+      },
+      "size": {
+        "width": 720,
+        "height": 116
+      },
+      "depth": 0
+    },
+    {
+      "name": "rating_background",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 139,
+        "y": 34
+      },
+      "size": {
+        "width": 173,
+        "height": 36
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_01",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 139,
+        "y": 34
+      },
+      "size": {
+        "width": 173,
+        "height": 36
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_02",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 34
+      },
+      "size": {
+        "width": 170,
+        "height": 36
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_03",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 139,
+        "y": 34
+      },
+      "size": {
+        "width": 176,
+        "height": 36
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_04",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 34
+      },
+      "size": {
+        "width": 170,
+        "height": 36
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_05",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 34
+      },
+      "size": {
+        "width": 170,
+        "height": 32
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_06",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 139,
+        "y": 34
+      },
+      "size": {
+        "width": 173,
+        "height": 36
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_07",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 139,
+        "y": 30
+      },
+      "size": {
+        "width": 176,
+        "height": 40
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_08",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 30
+      },
+      "size": {
+        "width": 170,
+        "height": 36
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_09",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 30
+      },
+      "size": {
+        "width": 173,
+        "height": 40
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_10",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 30
+      },
+      "size": {
+        "width": 173,
+        "height": 40
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DXRating_S_11",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 139,
+        "y": 34
+      },
+      "size": {
+        "width": 173,
+        "height": 32
+      },
+      "depth": 0
+    },
+    {
+      "name": "youjin_taisen",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 313,
+        "y": 9
+      },
+      "size": {
+        "width": 108,
+        "height": 65
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_25",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 313,
+        "y": 9
+      },
+      "size": {
+        "width": 108,
+        "height": 65
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_21",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 314,
+        "y": 9
+      },
+      "size": {
+        "width": 107,
+        "height": 65
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_22",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 314,
+        "y": 9
+      },
+      "size": {
+        "width": 107,
+        "height": 65
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_20",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 317,
+        "y": 9
+      },
+      "size": {
+        "width": 104,
+        "height": 65
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_23",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 315,
+        "y": 9
+      },
+      "size": {
+        "width": 106,
+        "height": 65
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_24",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 315,
+        "y": 9
+      },
+      "size": {
+        "width": 105,
+        "height": 65
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_17",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 317,
+        "y": 12
+      },
+      "size": {
+        "width": 100,
+        "height": 61
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_18",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 317,
+        "y": 12
+      },
+      "size": {
+        "width": 100,
+        "height": 61
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_15",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 317,
+        "y": 12
+      },
+      "size": {
+        "width": 100,
+        "height": 61
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_19",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 317,
+        "y": 12
+      },
+      "size": {
+        "width": 100,
+        "height": 61
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_16",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 317,
+        "y": 12
+      },
+      "size": {
+        "width": 100,
+        "height": 61
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_11",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 14
+      },
+      "size": {
+        "width": 85,
+        "height": 58
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_12",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 14
+      },
+      "size": {
+        "width": 85,
+        "height": 57
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_10",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 14
+      },
+      "size": {
+        "width": 85,
+        "height": 57
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_13",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 14
+      },
+      "size": {
+        "width": 85,
+        "height": 58
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_14",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 14
+      },
+      "size": {
+        "width": 85,
+        "height": 58
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_07",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 328,
+        "y": 20
+      },
+      "size": {
+        "width": 77,
+        "height": 46
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_08",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 328,
+        "y": 19
+      },
+      "size": {
+        "width": 77,
+        "height": 46
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_05",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 328,
+        "y": 19
+      },
+      "size": {
+        "width": 77,
+        "height": 46
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_06",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 328,
+        "y": 19
+      },
+      "size": {
+        "width": 77,
+        "height": 46
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_09",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 328,
+        "y": 19
+      },
+      "size": {
+        "width": 77,
+        "height": 46
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_02",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 333,
+        "y": 21
+      },
+      "size": {
+        "width": 69,
+        "height": 42
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_00",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 333,
+        "y": 21
+      },
+      "size": {
+        "width": 69,
+        "height": 42
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_03",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 333,
+        "y": 21
+      },
+      "size": {
+        "width": 69,
+        "height": 42
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_01",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 333,
+        "y": 21
+      },
+      "size": {
+        "width": 69,
+        "height": 42
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Class_S_04",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 333,
+        "y": 21
+      },
+      "size": {
+        "width": 69,
+        "height": 42
+      },
+      "depth": 0
+    },
+    {
+      "name": "shougo",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 140,
+        "y": 110
+      },
+      "size": {
+        "width": 272,
+        "height": 29
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Shougou_Normal",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 140,
+        "y": 111
+      },
+      "size": {
+        "width": 272,
+        "height": 26
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Shougou_Rainbow",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 110
+      },
+      "size": {
+        "width": 270,
+        "height": 29
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Shougou_Silver",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 112
+      },
+      "size": {
+        "width": 270,
+        "height": 25
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Shougou_Bronze",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 140,
+        "y": 112
+      },
+      "size": {
+        "width": 270,
+        "height": 27
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_Shougou_Gold",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 112
+      },
+      "size": {
+        "width": 268,
+        "height": 25
+      },
+      "depth": 0
+    },
+    {
+      "name": "NameBackground",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 67
+      },
+      "size": {
+        "width": 270,
+        "height": 42
+      },
+      "depth": 0
+    },
+    {
+      "name": "NameBackground",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 142,
+        "y": 68
+      },
+      "size": {
+        "width": 270,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "ranks",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 325,
+        "y": 71
+      },
+      "size": {
+        "width": 85,
+        "height": 35
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_00",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 325,
+        "y": 71
+      },
+      "size": {
+        "width": 85,
+        "height": 35
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_17",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_18",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_05",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 72
+      },
+      "size": {
+        "width": 83,
+        "height": 33
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_02",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 72
+      },
+      "size": {
+        "width": 83,
+        "height": 33
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_20",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_09",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_08",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_19",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_06",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_12",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_15",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_13",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_10",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_07",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_21",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_03",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 72
+      },
+      "size": {
+        "width": 83,
+        "height": 33
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_14",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_22",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_16",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 71
+      },
+      "size": {
+        "width": 86,
+        "height": 34
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_01",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 72
+      },
+      "size": {
+        "width": 83,
+        "height": 33
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_04",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 326,
+        "y": 72
+      },
+      "size": {
+        "width": 83,
+        "height": 33
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_11",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_CMN_DaniPlate_23",
+      "visible": false,
+      "opacity": 255,
+      "position": {
+        "x": 323,
+        "y": 68
+      },
+      "size": {
+        "width": 89,
+        "height": 41
+      },
+      "depth": 0
+    },
+    {
+      "name": "Icon",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 39,
+        "y": 35
+      },
+      "size": {
+        "width": 99,
+        "height": 98
+      },
+      "depth": 0
+    }
+  ]
+}
