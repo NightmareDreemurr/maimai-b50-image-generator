@@ -45,6 +45,33 @@ RATING_TABLE = [
     {"min": 1005000, "max": float('inf'), "offset": 224}
 ]
 
+# --- Rank辅助函数 ---
+RANK_TABLE = [
+    (0, "D"),
+    (100000, "D"),
+    (200000, "D"),
+    (300000, "D"),
+    (400000, "D"),
+    (500000, "C"),
+    (600000, "B"),
+    (700000, "BB"),
+    (750000, "BBB"),
+    (799999, "BBB"),
+    (800000, "A"),
+    (900000, "AA"),
+    (940000, "AAA"),
+    (969999, "AAA"),
+    (970000, "S"),
+    (980000, "S+"),
+    (989999, "S+"),
+    (990000, "SS"),
+    (995000, "SS+"),
+    (999999, "SS+"),
+    (1000000, "SSS"),
+    (1004999, "SSS"),
+    (1005000, "SSS+")
+]
+
 # --- 辅助函数 ---
 
 def calculate_rating(achievement, base):
@@ -94,6 +121,39 @@ def truncate_title(title, max_len=11.5):
         return title[:truncate_at] + '...'
     return title
 
+def get_rank_by_achievement(achievement):
+    """
+    根据达成率返回Rank字符串。
+    """
+    last_rank = "D"
+    for threshold, rank in RANK_TABLE:
+        if achievement < threshold:
+            break
+        last_rank = rank
+    return last_rank
+
+def rank_to_asset_name(rank):
+    """
+    根据Rank字符串返回assets下的图片文件名。
+    """
+    mapping = {
+        "D": "UI_GAM_Rank_D.png",
+        "C": "UI_GAM_Rank_C.png",
+        "B": "UI_GAM_Rank_B.png",
+        "BB": "UI_GAM_Rank_BB.png",
+        "BBB": "UI_GAM_Rank_BBB.png",
+        "A": "UI_GAM_Rank_A.png",
+        "AA": "UI_GAM_Rank_AA.png",
+        "AAA": "UI_GAM_Rank_AAA.png",
+        "S": "UI_GAM_Rank_S.png",
+        "S+": "UI_GAM_Rank_Sp.png",
+        "SS": "UI_GAM_Rank_SS.png",
+        "SS+": "UI_GAM_Rank_SSp.png",
+        "SSS": "UI_GAM_Rank_SSS.png",
+        "SSS+": "UI_GAM_Rank_SSSp.png"
+    }
+    return mapping.get(rank, "UI_GAM_Rank_D.png")
+
 # --- 主要生成函数 ---
 
 def generate_song_cell(
@@ -105,7 +165,9 @@ def generate_song_cell(
     dx_score: int,
     dx_total: int,
     base: float,
-    section_rank: int
+    section_rank: int,
+    fc_indicator: int = 0,
+    fs_indicator: int = 0
 ) -> Image.Image:
     """
     生成单个乐曲单元格的图像。
@@ -119,6 +181,8 @@ def generate_song_cell(
     :param dx_total: 总DX分数
     :param base: 谱面定数 (e.g., 14.9)
     :param section_rank: 在section中的排名 (e.g., 1)
+    :param fc_indicator: FC指示器 (0-4)
+    :param fs_indicator: FS指示器 (0-4)
     :return: PIL.Image.Image 对象
     """
     # 1. 创建画布
@@ -203,5 +267,128 @@ def generate_song_cell(
     text_width = text_bbox[2] - text_bbox[0]
     rank_x = 411 - text_width
     draw.text((rank_x, 14), rank_text, font=rank_font, fill=(255, 255, 255))
+
+    # 9.5. 绘制Rank图标
+    rank = get_rank_by_achievement(achievement)
+    rank_asset = rank_to_asset_name(rank)
+    rank_icon_path = os.path.join(ASSETS_DIR, rank_asset)
+    try:
+        rank_icon = Image.open(rank_icon_path).convert('RGBA')
+        # 等比缩放到137x54的95%内
+        scale_factor = 0.95
+        target_w, target_h = int(137 * scale_factor), int(54 * scale_factor)
+        w, h = rank_icon.size
+        scale = min(target_w / w, target_h / h)
+        new_w, new_h = int(w * scale), int(h * scale)
+        rank_icon = rank_icon.resize((new_w, new_h), Image.Resampling.LANCZOS)
+        # 居中贴到(276,85)的区域
+        paste_x = 276 + (137 - new_w) // 2 + 5
+        paste_y = 85 + (54 - new_h) // 2
+        canvas.paste(rank_icon, (paste_x, paste_y), rank_icon)
+    except FileNotFoundError:
+        print(f"Rank图标未找到: {rank_icon_path}")
+
+    # 指示器整体缩放比例
+    indicator_scale = 1.2
+
+    # 9.6. 绘制两个空白底图标
+    blank_icon_path = os.path.join(ASSETS_DIR, 'UI_MSS_MBase_Icon_Blank.png')
+    for pos_x in [302, 360]:
+        try:
+            # 原始参数
+            base_x, base_y, base_w, base_h = pos_x, 152, 44, 44
+            # 以中心为基准缩放
+            center_x = base_x + base_w // 2
+            center_y = base_y + base_h // 2
+            new_w = int(base_w * indicator_scale)
+            new_h = int(base_h * indicator_scale)
+            new_x = center_x - new_w // 2
+            new_y = center_y - new_h // 2
+            blank_icon = Image.open(blank_icon_path).convert('RGBA')
+            blank_icon = blank_icon.resize((new_w, new_h), Image.Resampling.LANCZOS)
+            canvas.paste(blank_icon, (new_x, new_y), blank_icon)
+        except FileNotFoundError:
+            print(f"空白底图标未找到: {blank_icon_path}")
+
+    # 指示器整体偏移量，便于整体调整
+    indicator_offset_x = 2
+    indicator_offset_y = 2
+    fc_indicator_extra_offset_y = 1
+
+    # 9.7. 绘制fc/ap图标
+    fc_icon_map = {
+        1: ("UI_MSS_MBase_Icon_FC.png", 301, 149, 44, 44, 65, 65),
+        2: ("UI_MSS_MBase_Icon_FCp.png", 301, 149, 44, 44, 70, 65),
+        3: ("UI_MSS_MBase_Icon_AP.png", 301, 149, 44, 44, 65, 65),
+        4: ("UI_MSS_MBase_Icon_APp.png", 301, 149, 44, 44, 70, 65)
+    }
+    if fc_indicator in fc_icon_map:
+        icon_name, x, y, w, h, raw_w, raw_h = fc_icon_map[fc_indicator]
+        # 以中心为基准缩放
+        center_x = x + w // 2 + indicator_offset_x
+        center_y = y + h // 2 + indicator_offset_y + fc_indicator_extra_offset_y
+        new_w = int(w * indicator_scale)
+        new_h = int(h * indicator_scale)
+        x = center_x - new_w // 2
+        y = center_y - new_h // 2
+        icon_path = os.path.join(ASSETS_DIR, icon_name)
+        try:
+            icon_img = Image.open(icon_path).convert('RGBA')
+            # 判断是否为带+图标
+            if raw_w == 70:
+                scale = min(new_w / 65, new_h / 65)
+                img_w = int(70 * scale)
+                img_h = int(65 * scale)
+                icon_img = icon_img.resize((img_w, img_h), Image.Resampling.LANCZOS)
+                paste_x = x + (new_w - int(65 * scale)) // 2 - int((70 - 65) * scale // 2)
+                paste_y = y + (new_h - img_h) // 2
+            else:
+                scale = min(new_w / raw_w, new_h / raw_h)
+                img_w = int(raw_w * scale)
+                img_h = int(raw_h * scale)
+                icon_img = icon_img.resize((img_w, img_h), Image.Resampling.LANCZOS)
+                paste_x = x + (new_w - img_w) // 2
+                paste_y = y + (new_h - img_h) // 2
+            canvas.paste(icon_img, (paste_x, paste_y), icon_img)
+        except FileNotFoundError:
+            print(f"FC/AP图标未找到: {icon_path}")
+
+    # 9.8. 绘制fs/fdx图标
+    fs_icon_map = {
+        1: ("UI_MSS_MBase_Icon_FS.png", 358, 150, 44, 44, 65, 65),
+        2: ("UI_MSS_MBase_Icon_FSp.png", 358, 150, 44, 44, 70, 65),
+        3: ("UI_MSS_MBase_Icon_FSD.png", 358, 150, 44, 44, 65, 65),
+        4: ("UI_MSS_MBase_Icon_FSDp.png", 361, 150, 44, 44, 70, 65),
+        5: ("UI_MSS_MBase_Icon_SP.png", 358, 150, 44, 44, 65, 65)
+    }
+    if fs_indicator in fs_icon_map:
+        icon_name, x, y, w, h, raw_w, raw_h = fs_icon_map[fs_indicator]
+        # 以中心为基准缩放
+        center_x = x + w // 2 + indicator_offset_x
+        center_y = y + h // 2 + indicator_offset_y
+        new_w = int(w * indicator_scale)
+        new_h = int(h * indicator_scale)
+        x = center_x - new_w // 2
+        y = center_y - new_h // 2
+        icon_path = os.path.join(ASSETS_DIR, icon_name)
+        try:
+            icon_img = Image.open(icon_path).convert('RGBA')
+            if raw_w == 70:
+                scale = min(new_w / 65, new_h / 65)
+                img_w = int(70 * scale)
+                img_h = int(65 * scale)
+                icon_img = icon_img.resize((img_w, img_h), Image.Resampling.LANCZOS)
+                paste_x = x + (new_w - int(65 * scale)) // 2 - int((70 - 65) * scale // 2)
+                paste_y = y + (new_h - img_h) // 2
+            else:
+                scale = min(new_w / raw_w, new_h / raw_h)
+                img_w = int(raw_w * scale)
+                img_h = int(raw_h * scale)
+                icon_img = icon_img.resize((img_w, img_h), Image.Resampling.LANCZOS)
+                paste_x = x + (new_w - img_w) // 2
+                paste_y = y + (new_h - img_h) // 2
+            canvas.paste(icon_img, (paste_x, paste_y), icon_img)
+        except FileNotFoundError:
+            print(f"FS/FDX图标未找到: {icon_path}")
 
     return canvas

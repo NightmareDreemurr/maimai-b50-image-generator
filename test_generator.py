@@ -20,7 +20,9 @@ def main():
         "dx_score": 3702,
         "dx_total": 3702,
         "base": 14.9,
-        "section_rank": 1
+        "section_rank": 1,
+        "fc_indicator": 4,   # 4: AP+
+        "fs_indicator": 4    # 4: FSD+
     }
 
     print("正在生成图片...")
