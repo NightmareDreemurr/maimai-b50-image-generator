@@ -1,0 +1,232 @@
+{
+  "document_size": {
+    "width": 432,
+    "height": 216
+  },
+  "layers": [
+    {
+      "name": "17fa5401c09b3ddef59529783795b66e",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 0,
+        "y": -107
+      },
+      "size": {
+        "width": 432,
+        "height": 431
+      },
+      "depth": 0
+    },
+    {
+      "name": "Layer 2",
+      "visible": true,
+      "opacity": 102,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 432,
+        "height": 216
+      },
+      "depth": 0
+    },
+    {
+      "name": "Rectangle 1",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "size": {
+        "width": 9,
+        "height": 215
+      },
+      "depth": 0
+    },
+    {
+      "name": "101.0000%",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 27,
+        "y": 88
+      },
+      "size": {
+        "width": 235,
+        "height": 35
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_TST_Infoicon_DeluxeMode",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 24,
+        "y": 13
+      },
+      "size": {
+        "width": 106,
+        "height": 26
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_GAM_Rank_SSSp",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 276,
+        "y": 85
+      },
+      "size": {
+        "width": 137,
+        "height": 54
+      },
+      "depth": 0
+    },
+    {
+      "name": "World’s End Loneliness",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 29,
+        "y": 48
+      },
+      "size": {
+        "width": 334,
+        "height": 25
+      },
+      "depth": 0
+    },
+    {
+      "name": "3702/3702",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 30,
+        "y": 138
+      },
+      "size": {
+        "width": 145,
+        "height": 24
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_GAM_Gauge_DXScoreIcon_05",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 187,
+        "y": 148
+      },
+      "size": {
+        "width": 90,
+        "height": 51
+      },
+      "depth": 0
+    },
+    {
+      "name": "FC/AP indicator",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 301,
+        "y": 149
+      },
+      "size": {
+        "width": 112,
+        "height": 49
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_MSS_MBase_Icon_Blank",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 302,
+        "y": 152
+      },
+      "size": {
+        "width": 44,
+        "height": 44
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_MSS_MBase_Icon_Blank",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 360,
+        "y": 152
+      },
+      "size": {
+        "width": 44,
+        "height": 44
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_MSS_MBase_Icon_APp",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 301,
+        "y": 149
+      },
+      "size": {
+        "width": 51,
+        "height": 49
+      },
+      "depth": 0
+    },
+    {
+      "name": "UI_MSS_MBase_Icon_FSDp",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 358,
+        "y": 150
+      },
+      "size": {
+        "width": 55,
+        "height": 47
+      },
+      "depth": 0
+    },
+    {
+      "name": "14.9 -> 335",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 30,
+        "y": 180
+      },
+      "size": {
+        "width": 131,
+        "height": 20
+      },
+      "depth": 0
+    },
+    {
+      "name": "#1",
+      "visible": true,
+      "opacity": 255,
+      "position": {
+        "x": 383,
+        "y": 14
+      },
+      "size": {
+        "width": 28,
+        "height": 18
+      },
+      "depth": 0
+    }
+  ]
+}
